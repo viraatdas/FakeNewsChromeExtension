@@ -8,16 +8,20 @@ def parseNouns(title):
     nouns = [word for word,pos in tagged_sent if pos == 'NNP']
     return nouns
 
-website_url = "https://www.bloomberg.com/news/articles/2018-09-14/trump-said-to-want-200-billion-in-china-tariffs-despite-talks"
+website_url = "https://www.ibc.org/consumption/trump-is-good-news-for-cnn/3248.article"
 soup = BeautifulSoup(urllib2.urlopen(website_url))
 title = soup.title.string
+title = title[:title.find('|')]
 print title
 
 query =  parseNouns(title)
+for i, w in enumerate(query):
+    query[i] =  w.replace('u',"")
 
+query = "".join(query)
+print query
 
-query = query[:query.find('|')]
-print ("article title is " + query)
+print ("article title is " + title)
 
 for url in search(query, stop=20):
     print(url)
