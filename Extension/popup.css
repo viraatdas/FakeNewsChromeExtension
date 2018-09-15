@@ -1,0 +1,28 @@
+body {
+	background-color: #ffffff;
+	height: 500px;
+	width: 250px;
+	margin: 0;
+}
+
+#toolbar {
+	width: 100%;
+	color: #ffffff;
+	background-color: #006666;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+li {
+	display: inline;
+}
+
+#toolTitle {
+}
+
+.toolButton {
+	width: 25%;
+	float: right;
+}

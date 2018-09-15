@@ -1,0 +1,16 @@
+{
+    "name": "News Scan Extension",
+    "version": "0.1",
+    "description": "Scan the web for other news articles relating to the one you have!",
+    "background": {
+	"scripts": ["background.js"],
+	"persistent": false
+    },
+    "browser_action": {
+	"default_popup": "popup.html"
+    },
+    "permissions": [
+	"activeTab"
+    ],
+    "manifest_version": 2
+}
