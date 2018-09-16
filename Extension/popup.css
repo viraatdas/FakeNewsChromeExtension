@@ -1,24 +1,40 @@
 body {
-	background-color: #ffffff;
-	height: 500px;
-	height-max: 100%;
-	width: 250px;
-	margin: 0;
+	background-color: white;
+	height: 600px;
+	width: 300px;
+	margin-left: 2.5%;
+	margin-right: 10%;
 }
 
 #toolbar {
 	width: 100%;
 	color: #ffffff;
-	background-color: #006666;
+	background-color: #3281ff;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	display: block;
+	text-align: center;
+	font-size: 150%;
+	box-shadow: 0px 3px 4px grey;
+	border-radius: 5px;
 }
 
-li {
-	display: inline;
+#tableTitle{
+
 }
+
+ol {
+	margin-left: -25px;
+	margin-top: -10px;
+	font-size: 130%;
+}
+
+ a {
+	 color: blue;
+ }
 
 #toolTitle {
 	padding-left: 2.5%;
@@ -32,15 +48,36 @@ li {
 
 #toolNumberDiv {
 	padding-right: 2.5%;
-	background-color: #FF5555;
-	border-radius: 10%;
-	height: 100%;
+	/* background-color: #FF5555; */
+	text-align: center;
 	font-size: 180%;
+
 }
 
+	#theScore {
+		font-size: 200%;
+		text-align: center;
+	}
+
+table{
+	border-collapse: collapse;
+}
+
+	#t1 {
+		padding: inherit;
+		padding-left: 10px;
+	}
+
+#content {
+		border: 1px solid black;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
 td {
-	
+	border: 1px solid black;
 	display: block;
+	padding: 10px;
 }
 
 tr {
@@ -50,7 +87,6 @@ tr {
 	display: block;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	text-align: center;
 	text-decoration: none;
 }
 
