@@ -21,11 +21,29 @@ body {
 	font-size: 150%;
 	box-shadow: 0px 3px 4px grey;
 	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #tableTitle{
  text-align: center;
  font-size: 1.6em;
+ background-color: #4286f4;
+ /* color: white; */
+ border-radius: 7px;
+ padding-top: 4px;
+ padding-bottom: 4px;
+ /* text-shadow: 1px 3px 4px black; */
+ /* border-style: solid; */
+ /* border-width: thin; */
+ border-radius: 30px 140px 30px 140px;
+ width: 250px;
+ margin: auto;
+ margin-bottom: 20px;
+}
+
+#theScore{
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 li {
@@ -57,7 +75,7 @@ ol {
 	padding-right: 2.5%;
 	/* background-color: #FF5555; */
 	text-align: center;
-	font-size: 180%;
+	font-size: 200%;
 
 }
 
