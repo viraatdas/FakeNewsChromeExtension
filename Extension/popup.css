@@ -20,12 +20,22 @@ li {
 	display: inline;
 }
 
-li:first-child {
+#toolTitle {
 	padding-left: 2.5%;
 }
 
-li:last-child {
+#toolNumber {
+	float: right;
+	height: 100%;
+	align-content: center;
+}
+
+#toolNumberDiv {
 	padding-right: 2.5%;
+	background-color: #FF5555;
+	border-radius: 10%;
+	height: 100%;
+	font-size: 180%;
 }
 
 td {
@@ -37,7 +47,7 @@ tr {
 }
 
 .article {
-	display:block;
+	display: block;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
 	text-align: center;
