@@ -1,6 +1,7 @@
 ## News Scan Chrome Extensions
 
 **Inspiration**
+
 As a generation that reads a lot of political news, it is important to be able to get a wide range of information on a certain event. This lead us to make News Scan.
 
 ##What it does
