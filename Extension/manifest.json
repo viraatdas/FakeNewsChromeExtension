@@ -9,11 +9,18 @@
     "browser_action": {
 	"default_popup": "popup.html"
     },
+    "icons": { "16": "img/size@16.png",
+               "24": "img/size@24.png",
+               "32": "img/size@32.png",
+               "64": "img/size@64.png",
+               "128": "img/size@128.png"
+    },
     "permissions": [
 	"activeTab",
 	"tabs",
-    	"http://*/*",
-    	"https://*/*"
+    	"http://*/",
+    	"https://*/",
+	"localhost:5000"
     ],
     "manifest_version": 2
 }
