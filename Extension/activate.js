@@ -9,10 +9,9 @@ function(tabs){
 function postURLfunction(){
 	//run the (url-using) function here
 	chrome.extension.getBackgroundPage().console.log(currentUrl);
-	document.getElementById("Title1").innerHTML = currentUrl;
 	urlJSON = JSON.stringify(currentUrl);
-	uploadURL;
-}
+	//uploadURL;
+};
 function uploadURL() {
     // ajax the JSON to the server
     $.ajax({
@@ -22,4 +21,5 @@ function uploadURL() {
     success: function(data) { alert('data: ' + data); },
     contentType: "application/json",
     dataType: 'json'
-});
+    })
+};

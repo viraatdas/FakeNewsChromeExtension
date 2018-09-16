@@ -3,8 +3,8 @@
     "version": "0.1",
     "description": "Scan the web for other news articles relating to the one you have!",
     "background": {
-	"scripts": ["background.js"],
-	"persistent": false
+	"persistent": false,
+	"scripts": ["jquery-3.3.1.min.js", "background.js"]
     },
     "browser_action": {
 	"default_popup": "popup.html"
