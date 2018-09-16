@@ -63,16 +63,20 @@ def function (website_url):
     url_list_new = url_list_new[0]
     url_list_washington = url_list_washington[0]
 
-    def par (website_url):
-        page = requests.get(website_url)
+    def par (url_2):
+        page = requests.get(url_2)
         soup = BeautifulSoup(page.text, 'html.parser')
         page = soup.findAll('p')
         return page
 
+    body_of_text_actual = par(website_url)
     body_of_text_fox = par(url_list_fox)
     body_of_text_business = par(url_list_business)
     body_of_text_wall = par(url_list_wall)
     body_of_text_new = par(url_list_new)
     body_of_text_washington = par(url_list_washington)
+
+    ret_list = [body_of_text_actual,body_of_text_fox, body_of_text_business, body_of_text_wall, body_of_text_new, body_of_text_washington]
+    return (ret_list)
 
 

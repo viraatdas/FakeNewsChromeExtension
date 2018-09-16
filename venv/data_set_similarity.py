@@ -2,6 +2,10 @@
 
 import re, math
 from collections import Counter
+from Title import ret_list
+
+body_of_text_fox = ret_list[0][2:len(ret_list)-2]
+#To Do
 
 WORD = re.compile(r'\w+')
 cosineValues = []
